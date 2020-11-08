@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtMess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btnPlayAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PlayAgain"
+        android:layout_below="@id/txtMess"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:onClick="playAgain"
+        />
+
+    <GridLayout
+        android:id="@+id/glBoard"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:background="@drawable/board"
+        android:layout_centerInParent="true"
+        android:columnCount="3"
+        android:rowCount="3"
+        >
+
+        <ImageView
+            android:layout_height="90dp"
+            android:layout_width="90dp"
+            android:onClick="dropIn"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="24dp"
+            android:tag="0"
+            />
+
+        <ImageView
+            android:layout_height="90dp"
+            android:layout_width="90dp"
+            android:onClick="dropIn"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="48dp"
+            android:tag="1"
+            />
+
+        <ImageView
+            android:layout_height="90dp"
+            android:layout_width="90dp"
+            android:onClick="dropIn"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="48dp"
+            android:tag="2"
+            />
+
+        <ImageView
+            android:layout_height="90dp"
+            android:layout_width="90dp"
+            android:onClick="dropIn"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="24dp"
+            android:tag="3"
+            />
+
+        <ImageView
+            android:layout_height="90dp"
+            android:layout_width="90dp"
+            android:onClick="dropIn"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="48dp"
+            android:tag="4"
+            />
+
+        <ImageView
+            android:layout_height="90dp"
+            android:layout_width="90dp"
+            android:onClick="dropIn"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="48dp"
+            android:tag="5"
+            />
+
+        <ImageView
+            android:layout_height="90dp"
+            android:layout_width="90dp"
+            android:onClick="dropIn"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="24dp"
+            android:tag="6"
+            />
+
+        <ImageView
+            android:layout_height="90dp"
+            android:layout_width="90dp"
+            android:onClick="dropIn"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="48dp"
+            android:tag="7"
+            />
+
+        <ImageView
+            android:layout_height="90dp"
+            android:layout_width="90dp"
+            android:onClick="dropIn"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="48dp"
+            android:tag="8"
+            />
+
+    </GridLayout>
+
+</RelativeLayout>
